@@ -95,7 +95,7 @@ Systems (agents, environments) are not separate entities but are themselves
     edit bandwidth concerning the shared memory field can reshape others' attractors,
     often subtly and without direct intent or conflict. The "stronger"
     system effectively sculpts the informational terrain for others (the "fly on the
-    moving rope" or "ant on a moving finger" analogy made mechanical).
+    stretching rubber band" or "ant on a moving finger" analogy made mechanical).
 * **Inescapable Interaction:** Even a system that is "gradient-closed" to external
     editing (i.e., its internal attractors are hard to reshape from the outside) can
     still inadvertently affect other systems' memory gradients simply by acting within
