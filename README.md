@@ -54,6 +54,7 @@ fundamental, interacting, and often competing attractor classes:
     acquisition, and physical integrity.
 * **C (Computation/Knowledge Application):** Enabling effective action, modeling, and
     transformation of states.
+
 The interplay of these attractors generates complex system dynamics, not necessarily
 a convergence to a single global optimum.
 
