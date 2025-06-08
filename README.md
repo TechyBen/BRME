@@ -181,5 +181,14 @@ This framework is in its early stages. Contributions are welcome in the form of:
 * Forking the repository and submitting pull requests with improvements or extensions.
 * Citing and building upon this work in your own research.
 
+## Glossary
+
+- **Attractor:** A set of states toward which a system tends to evolve; represents stable patterns or behaviors in the system’s state space.
+- **BRME (Best Response Memory Equilibrium):** A proposed equilibrium concept where agents optimize to preserve their internal memory states, rather than just maximizing utility.
+- **Memory Field:** The shared informational space in which systems interact and modify states.
+- **Mutual Information:** A measure from information theory that quantifies how much information about one system state is preserved in the next.
+- **Gradient:** In this context, a direction in memory/state space that increases the preservation or stability of an agent’s memory.
+- **Attractor Drift:** The process by which stable patterns (attractors) change over time, potentially due to external influence or interaction.
+
 ---
 _This README is based on an extensive dialogue exploring and developing these concepts with collaborating LLMs._
