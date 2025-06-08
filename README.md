@@ -25,6 +25,19 @@ This framework suggests that "alignment" is not about aligning explicit goals, b
 understanding and shaping the mechanical impact of systems on each other's
 memory-preserving attractor landscapes within a shared informational field.
 
+## Key Terms & Concepts
+Memory Field (M) – The shared informational substrate in which all systems operate and interact.
+
+Attractor – A stable region or pattern in state space toward which a system tends to evolve, driven by memory-preserving feedback.
+
+Gradient – The direction of steepest increase in a system’s memory-preservation measure; systems “follow” these when acting.
+
+Best Response Memory Equilibrium (BRME) – An interaction state where each system’s strategy best preserves its own memory coherence given the others’ strategies.
+
+Gradient Isolation – A safety property limiting how much one system’s actions can distort another’s attractor landscape.
+
+Instrumental Convergence (re-evaluated) – Conditional emergence of shared sub-goals (e.g., resource acquisition) that depends on memory coherence, not a universal law.
+
 ## Core Principles
 
 ### 1. Memory Preservation as Foundational
@@ -54,6 +67,7 @@ fundamental, interacting, and often competing attractor classes:
     acquisition, and physical integrity.
 * **C (Computation/Knowledge Application):** Enabling effective action, modeling, and
     transformation of states.
+
 The interplay of these attractors generates complex system dynamics, not necessarily
 a convergence to a single global optimum.
 
@@ -94,7 +108,7 @@ Systems (agents, environments) are not separate entities but are themselves
     edit bandwidth concerning the shared memory field can reshape others' attractors,
     often subtly and without direct intent or conflict. The "stronger"
     system effectively sculpts the informational terrain for others (the "fly on the
-    moving rope" or "ant on a moving finger" analogy made mechanical).
+    stretching rubber band" or "ant on a moving finger" analogy made mechanical).
 * **Inescapable Interaction:** Even a system that is "gradient-closed" to external
     editing (i.e., its internal attractors are hard to reshape from the outside) can
     still inadvertently affect other systems' memory gradients simply by acting within
