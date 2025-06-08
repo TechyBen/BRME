@@ -13,6 +13,7 @@ The virus's interaction with the host is a classic example of Interaction as Gra
 
 The viral replication process performs write operations directly on the host's memory field (M). It alters neuronal function and the production of neurotransmitters.
 The virus is not "fighting" the host. It is a program executing in a new environment, and its execution fundamentally changes the operational physics of that environment. This is a form of Asymmetric Cognition; the virus's simple, robust program can systematically deconstruct the host's far more complex but fragile system.
+
 4. Attractor Hijacking
 The simulation will model the following process:
 
