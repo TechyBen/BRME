@@ -25,6 +25,19 @@ This framework suggests that "alignment" is not about aligning explicit goals, b
 understanding and shaping the mechanical impact of systems on each other's
 memory-preserving attractor landscapes within a shared informational field.
 
+## Key Terms & Concepts
+Memory Field (M) – The shared informational substrate in which all systems operate and interact.
+
+Attractor – A stable region or pattern in state space toward which a system tends to evolve, driven by memory-preserving feedback.
+
+Gradient – The direction of steepest increase in a system’s memory-preservation measure; systems “follow” these when acting.
+
+Best Response Memory Equilibrium (BRME) – An interaction state where each system’s strategy best preserves its own memory coherence given the others’ strategies.
+
+Gradient Isolation – A safety property limiting how much one system’s actions can distort another’s attractor landscape.
+
+Instrumental Convergence (re-evaluated) – Conditional emergence of shared sub-goals (e.g., resource acquisition) that depends on memory coherence, not a universal law.
+
 ## Core Principles
 
 ### 1. Memory Preservation as Foundational
