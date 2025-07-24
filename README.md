@@ -190,5 +190,9 @@ This framework is in its early stages. Contributions are welcome in the form of:
 - **Gradient:** In this context, a direction in memory/state space that increases the preservation or stability of an agent’s memory.
 - **Attractor Drift:** The process by which stable patterns (attractors) change over time, potentially due to external influence or interaction.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ---
 _This README is based on an extensive dialogue exploring and developing these concepts with collaborating LLMs._
