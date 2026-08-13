@@ -142,6 +142,42 @@ the interaction dynamics within the shared memory field.
     attractors) to ensuring **bounded, predictable, and non-destructive interactions
     within the shared memory manifold**.
 
+## Reference Implementation
+
+A runnable model of the framework lives in
+[`Simulations/reference_implementation/`](Simulations/reference_implementation/).
+It is standard-library Python with no dependencies:
+
+```bash
+cd Simulations/reference_implementation
+python3 run_all.py                             # all experiments
+python3 -m unittest discover -s tests -t .     # 82 tests
+```
+
+It exists to make the claims on this page measurable rather than only described,
+and it reports where the measurements disagree with the framework. Three results
+bear directly on the text above — see
+[`FINDINGS.md`](Simulations/reference_implementation/FINDINGS.md):
+
+* **The stated memory-preservation objective is degenerate.**
+  `I(m_t; m_{t+1})` is bounded by `H(m)`, so it rewards a memory that keeps
+  changing predictably and penalises one that stays put. Ranked across the whole
+  strategy space, it correlates with actual identity preservation at
+  **ρ = −0.844** — very nearly inverted. The fix is to substitute
+  `I(identity; m_t)`, which leaves the rest of the framework intact but means
+  Principle 1 and the definitions in `Formalisations/` need amending.
+* **A pure-strategy BRME does not always exist.** Iterated best response cycles
+  in a finite, fully-enumerated strategy space. Section 5 asserts existence
+  without proof; this is a counterexample.
+* **The safety criteria of Section 7 are computable, and worth computing.**
+  Measured on a system's *landscape* rather than its behaviour, they respond
+  6× more sensitively than the host's observed memory does — one system can
+  substantially reshape another's attractor landscape while the other still
+  looks healthy.
+
+The instrumental-convergence claims in Principle 4 remain **untested**; the
+machinery for that experiment exists but the study has not been run.
+
 ## Goals of this Repository
 
 * To clearly present this theoretical framework for critical discussion, peer review,
@@ -158,12 +194,24 @@ the interaction dynamics within the shared memory field.
 * **Formal Mathematical Definitions:** Rigorous definitions for memory fields,
     transition operators, attractor stability metrics, gradient calculations, and
     BRME solutions.
+    * **Open:** amend the memory-preservation definition, which is currently
+        degenerate (see the Reference Implementation section above).
+    * **Open:** an existence result for BRME, or an explicit mixed-strategy
+        extension, since pure-strategy equilibria demonstrably do not always
+        exist.
 * **Simulations:**
     * Agent-based models of systems interacting in a shared memory field.
+        *A minimal one now exists in `Simulations/reference_implementation/`.*
     * Simulations of BRME in various game structures.
     * Modeling attractor drift and gradient manipulation.
     * Testing the "Rabies Virus" case study or other
-        biological/computational systems.
+        biological/computational systems. *Its mechanism — one system degrading
+        a shared channel another depends on — is implemented as experiment 3.*
+    * **Open, and the most valuable next step:** an instrumental-convergence
+        phase study. Sweep resource scarcity and capability independently and
+        show acquisitive behaviour emerging and then dissolving. This is the
+        claim `Proposed_Studies.md` currently states as a conclusion without
+        supporting evidence.
 * **Application to AI Architectures:** How can these principles inform the design
     of AI systems for safer interaction?
 * **Ethical Implications:** Exploring the ethics of "gradient shaping" and

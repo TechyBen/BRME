@@ -1,5 +1,18 @@
 Proposed Studies
 
+> **Status note.** The conclusions below are stated as findings ("Langton's Ant
+> systems provide direct computational evidence that...") but no Langton's Ant
+> code or data is present in this repository, so they are currently proposals
+> rather than results. They should either be run and reported, or reworded as
+> hypotheses.
+>
+> A runnable model that can host the instrumental-convergence study now exists in
+> `reference_implementation/`: the world already contains a resource pool with a
+> tunable refill rate, and a capability parameter governing how much memory
+> repair one action achieves. Sweeping those two independently is the experiment
+> this document describes. See `reference_implementation/FINDINGS.md` for the
+> claims that have been measured so far, and for two that came back negative.
+
 Systematic Ruleset Variation: Map the phase diagram of different cellular automaton rules to identify which produce IC-like vs. alternative behaviors.
 Multi-Agent Scaling: Test how IC emergence changes with increasing numbers of interacting agents.
 Perturbation Experiments: Measure the fragility of IC phases to small rule modifications.
